@@ -1,0 +1,5 @@
+/* Bridge stylesheet so index.html (styles.css) finds the project's CSS.
+   The repository currently has `style.css` but `index.html` links to `styles.css`.
+   This file imports the existing stylesheet to restore styling without changing HTML.
+*/
+@import url("./style.css");
