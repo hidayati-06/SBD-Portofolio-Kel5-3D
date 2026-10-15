@@ -1,7 +1,7 @@
-# Personal Portfolio Website
+# Portfolio Website
 
 ## Anggota Kelompok
-1. anindya Tsabita
+1. Anindya Tsabita
 2. Fina Hidayati
 2. Salwa Syaharani PUtri 
 
@@ -9,4 +9,3 @@
 Website portofolio interaktif yang dibangun menggunakan HTML, CSS, dan GitHub Copilot.
 
 ## Cara Menjalankan Website
-Buka file `index.html` pada browser.

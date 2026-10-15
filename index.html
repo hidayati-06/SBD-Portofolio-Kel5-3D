@@ -1,206 +1,63 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portofolio Fina, mahasiswa Teknik Informatika dan pengajar tingkat sekolah dasar.">
-  <meta name="theme-color" content="#f5f7f4">
-  <title>Fina — Portofolio</title>
-  <script>
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      document.documentElement.dataset.theme = "dark";
-    }
-  </script>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Team 5 Class 3D — a multidisciplinary student developer team building thoughtful digital experiences." />
+  <title>NexaMuda | Student Developer Team</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <a class="wordmark" href="#beranda" aria-label="Fina, ke beranda">F<span>.</span></a>
-    <nav class="main-nav" aria-label="Navigasi utama">
-      <a href="#tentang">Tentang</a>
-      <a href="#resume">Resume</a>
-      <a href="#proyek">Proyek</a>
-      <a href="#kontak">Kontak</a>
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Team 5 Class 3D home"><span class="brand-mark">N</span><span>Nexa<span class="brand-accent">Muda</span></span></a>
+      <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links">
+        <a href="#home">Home</a><a href="#about">About Team</a><a href="#members">Members</a><a href="#skills">Skills &amp; Projects</a><a href="#contact">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false"><span class="sun">☼</span><span class="moon">☾</span></button>
+      </div>
     </nav>
-    <div class="header-actions">
-      <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Aktifkan mode gelap">
-        <span class="toggle-label">Mode gelap</span>
-        <span class="toggle-track" aria-hidden="true"><span class="toggle-thumb"></span></span>
-      </button>
-      <button class="print-button" type="button">Cetak CV</button>
-    </div>
   </header>
 
   <main>
-    <section class="hero page-width" id="beranda" aria-labelledby="hero-title">
+    <section id="home" class="hero container">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot"></span>PORTOFOLIO PRIBADI</p>
-        <h1 id="hero-title">Halo,<br>saya <span>Fina.</span></h1>
-        <p class="hero-role">Mahasiswa Teknik Informatika<span class="role-divider">/</span>Pengajar</p>
-        <p class="hero-intro">Saya senang belajar, berbagi pengetahuan, dan mengembangkan ide menjadi pengalaman digital yang bermanfaat.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#proyek">Lihat proyek <span aria-hidden="true">↗</span></a>
-          <a class="text-link" href="#resume">Lihat resume <span aria-hidden="true">↓</span></a>
-        </div>
-        <p class="hero-note"><span class="note-line"></span>TERUS BELAJAR, TERUS BERTUMBUH</p>
+        <p class="eyebrow"><span class="eyebrow-dot"></span> Student developer collective · Jakarta</p>
+        <h1>Ideas that move<br /><em>people forward.</em></h1>
+        <p class="hero-lede">We are Team 5 Class 3D — three curious builders combining technology, design, and community impact to make digital experiences that matter.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#members">Meet the team <span>↗</span></a><a class="text-link" href="#skills">Explore our work <span>→</span></a></div>
+        <div class="hero-proof"><div class="avatars"><span>SS</span><span>FH</span><span>AA</span></div><p><strong>3 minds</strong> · one shared ambition</p></div>
       </div>
-
-      <div class="hero-art" aria-label="Ilustrasi portofolio Fina" role="img">
-        <div class="art-topline"><span>PORTOFOLIO</span><span>01 — 03</span></div>
-        <div class="art-orbit orbit-one"></div>
-        <div class="art-orbit orbit-two"></div>
-        <div class="art-tag tag-one">01 <span>TEKNOLOGI</span></div>
-        <div class="art-tag tag-two">02 <span>PENDIDIKAN</span></div>
-        <div class="art-tag tag-three">03 <span>KREATIVITAS</span></div>
-        <div class="art-center">
-          <span class="center-small">SENANG BERTEMU DENGANMU</span>
-          <span class="center-title">Fina<span class="center-period">.</span></span>
-          <span class="center-rule"></span>
-          <span class="center-caption">Belajar · Berbagi · Berkarya</span>
-        </div>
-        <div class="art-footer"><span>MAHASISWA &amp; PENGAJAR</span><span class="footer-spark" aria-hidden="true">✳</span></div>
+      <div class="hero-art" aria-label="Abstract NexaMuda illustration">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div><div class="art-spark spark-one">✦</div><div class="art-spark spark-two">✦</div>
+        <div class="art-card art-card-main"><span class="card-label">BUILD / LEARN / SHARE</span><strong>Human-centered<br /><span>by default.</span></strong><div class="art-line"></div><small>EST. 2025 · UIN JAKARTA</small></div>
+        <div class="floating-note note-one"><span>✦</span> Design with purpose</div><div class="floating-note note-two">3 perspectives <span>↗</span></div>
       </div>
-      <a class="scroll-cue" href="#tentang"><span></span>GULIR UNTUK MENJELAJAH</a>
     </section>
 
-    <section class="section-band" id="tentang" aria-labelledby="about-title">
-      <div class="intro-grid page-width">
-        <div class="section-index"><span>01</span><span class="index-rule"></span><span>TENTANG SAYA</span></div>
-        <div class="intro-content">
-          <p class="eyebrow">PROFIL SINGKAT</p>
-          <h2 id="about-title">Menghubungkan teknologi dengan <em>pembelajaran.</em></h2>
-          <div class="intro-bottom">
-            <p class="body-copy">Saya Fina, mahasiswa Teknik Informatika yang juga memiliki pengalaman mengajar siswa tingkat sekolah dasar. Pengalaman tersebut menumbuhkan ketertarikan saya pada cara teknologi dan komunikasi yang baik dapat membantu orang belajar dan berkembang.</p>
-            <dl class="quick-facts">
-              <div><dt>Nama</dt><dd>Fina</dd></div>
-              <div><dt>Bidang</dt><dd>Teknik Informatika</dd></div>
-              <div><dt>Pengalaman</dt><dd>Pengajar tingkat sekolah dasar</dd></div>
-            </dl>
-          </div>
+    <section id="about" class="about section container">
+      <div class="section-intro"><p class="eyebrow">01 · The collective</p><h2>Different strengths.<br /><em>One direction.</em></h2></div>
+      <div class="about-copy"><p class="large-copy">NexaMuda is a student-led team where creative thinking meets practical technology. From visual storytelling to digital literacy and analytical problem-solving, we bring complementary perspectives to every challenge.</p><p>We are early in our journey, but we take every project seriously: communicate clearly, learn quickly, and leave things better than we found them.</p><div class="stat-row"><div><strong>03</strong><span>specialists</span></div><div><strong>∞</strong><span>curiosity</span></div><div><strong>01</strong><span>shared goal</span></div></div></div>
+    </section>
+
+    <section id="members" class="members section">
+      <div class="container"><div class="section-heading"><div><p class="eyebrow">02 · The people</p><h2>Meet the <em>team.</em></h2></div><p>Small team, broad toolkit.<br />Always ready to collaborate.</p></div>
+        <div class="member-grid">
+          <article class="member-card card-salwa"><div class="member-top"><span class="member-index">01 / 03</span><span class="member-shape">✦</span></div><div class="member-avatar avatar-salwa">SS</div><h3>Salwa Syaharani Putri</h3><p class="role">Creative Designer · Content Strategist</p><p class="member-bio">An Informatics Engineering student who turns ideas into engaging visual stories. Salwa brings hands-on experience in event creative production, educational content, and social media.</p><div class="skill-tags"><span>Canva</span><span>CapCut</span><span>Photography</span><span>Content</span></div><div class="member-links"><a class="button button-dark" href="assets/Salwa-Syaharani-Putri-CV.pdf" target="_blank" rel="noopener">View resume PDF ↗</a><a class="icon-link" href="https://www.instagram.com/salwa.syaharani" target="_blank" rel="noopener" aria-label="Salwa Instagram">◎</a></div></article>
+          <article class="member-card card-fina"><div class="member-top"><span class="member-index">02 / 03</span><span class="member-shape">◒</span></div><div class="member-avatar avatar-fina">FH</div><h3>Fina Hidayati</h3><p class="role">Operations &amp; Communication</p><p class="member-bio">A driven graduate with a strong foundation in organization, public speaking, and analytical thinking. Fina is at her best coordinating people, details, and momentum toward a shared result.</p><div class="skill-tags"><span>Microsoft Office</span><span>Public Speaking</span><span>Leadership</span><span>Teamwork</span></div><div class="member-links"><a class="button button-dark" href="assets/Fina-Hidayati-CV.docx" target="_blank" rel="noopener">View resume file ↗</a><a class="icon-link" href="mailto:finahidayati06@gmail.com" aria-label="Email Fina">✉</a></div></article>
+          <article class="member-card card-anindya"><div class="member-top"><span class="member-index">03 / 03</span><span class="member-shape">✳</span></div><div class="member-avatar avatar-anindya">AA</div><h3>Anindya Tsabita<br />Alkalifa Zaen</h3><p class="role">Digital Literacy &amp; Community</p><p class="member-bio">An Informatics Engineering student passionate about social impact, cultural exchange, and building smarter communities. Anindya pairs empathy with practical digital and coordination skills.</p><div class="skill-tags"><span>Canva</span><span>Python</span><span>Google Suite</span><span>Problem Solving</span></div><div class="member-links"><a class="button button-dark" href="assets/Anindya-Tsabita-Alkalifa-Zaen-CV.pdf" target="_blank" rel="noopener">View resume PDF ↗</a><a class="icon-link" href="mailto:anindyatsabitaaz@gmail.com" aria-label="Email Anindya">✉</a></div></article>
         </div>
       </div>
     </section>
 
-    <section class="resume-section page-width" id="resume" aria-labelledby="resume-title">
-      <div class="section-heading">
-        <div class="section-index"><span>02</span><span class="index-rule"></span><span>LATAR BELAKANG</span></div>
-        <div>
-          <p class="eyebrow">RESUME / CV</p>
-          <h2 id="resume-title">Perjalanan <em>belajar &amp; berkarya.</em></h2>
-        </div>
-      </div>
-      <div class="resume-grid">
-        <article class="resume-item">
-          <span class="resume-number">01</span>
-          <div class="resume-detail">
-            <p class="item-type">PENDIDIKAN</p>
-            <h3>Teknik Informatika</h3>
-            <p class="item-subtitle">Mahasiswa</p>
-            <p class="item-description">Menempuh pendidikan di bidang komputasi dan teknologi informasi.</p>
-          </div>
-          <span class="item-arrow" aria-hidden="true">↗</span>
-        </article>
-        <article class="resume-item">
-          <span class="resume-number">02</span>
-          <div class="resume-detail">
-            <p class="item-type">PENGALAMAN</p>
-            <h3>Pengajar tingkat sekolah dasar</h3>
-            <p class="item-subtitle">Pengalaman mengajar</p>
-            <p class="item-description">Mendampingi siswa dalam proses belajar dengan penjelasan yang jelas dan mudah dipahami.</p>
-          </div>
-          <span class="item-arrow" aria-hidden="true">↗</span>
-        </article>
-      </div>
-      <p class="resume-footnote"><span class="asterisk">*</span>Informasi institusi dan periode tidak dicantumkan.</p>
-    </section>
+    <section id="skills" class="skills section container"><div class="section-intro"><p class="eyebrow">03 · What we bring</p><h2>Skills with a<br /><em>point of view.</em></h2></div><div class="skills-content"><div class="skill-block"><h3>Our toolkit</h3><div class="tool-list"><span>Creative design</span><span>Content production</span><span>Python foundations</span><span>Microsoft Office</span><span>Digital literacy</span><span>Event coordination</span><span>Social media</span><span>Public speaking</span></div></div><div class="skill-block"><h3>Highlights</h3><div class="highlight-list"><div><span class="highlight-number">01</span><div><strong>Educational content</strong><p>Short-form learning content reaching 200K+ views and 30K+ engagements.</p></div></div><div><span class="highlight-number">02</span><div><strong>Digital community</strong><p>Community education around digital literacy, online safety, and health.</p></div></div><div><span class="highlight-number">03</span><div><strong>Event experiences</strong><p>Visual identities, posters, certificates, and live event coordination.</p></div></div></div></div></div></section>
 
-    <section class="project-section section-band" id="proyek" aria-labelledby="project-title">
-      <div class="page-width">
-        <div class="section-heading project-heading">
-          <div class="section-index"><span>03</span><span class="index-rule"></span><span>KARYA PILIHAN</span></div>
-          <div>
-            <p class="eyebrow">PROYEK</p>
-            <h2 id="project-title">Ide yang membantu menemukan <em>arah.</em></h2>
-          </div>
-        </div>
-        <article class="project-card">
-          <div class="project-visual" role="img" aria-label="Pratinjau visual Web Career Navigator YOURWAY">
-            <div class="browser-bar">
-              <span class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></span>
-              <span>yourway.career</span>
-              <span class="browser-menu">•••</span>
-            </div>
-            <div class="project-screen">
-              <div class="screen-sidebar" aria-hidden="true">
-                <span class="screen-logo">Y.</span>
-                <span class="sidebar-active"></span><span></span><span></span>
-              </div>
-              <div class="screen-content">
-                <span class="screen-greeting">TEMUKAN LANGKAH BERIKUTNYA</span>
-                <span class="screen-headline">Jelajahi<br><strong>kemungkinanmu.</strong></span>
-                <div class="screen-bottom">
-                  <span class="screen-cta">MULAI JELAJAHI <b aria-hidden="true">↗</b></span>
-                </div>
-                <span class="screen-orbit" aria-hidden="true"><i></i><i></i><i></i></span>
-              </div>
-            </div>
-            <span class="visual-caption">GAMBARAN KONSEP PROYEK</span>
-          </div>
-          <div class="project-copy">
-            <div class="project-meta"><span>PROYEK WEB</span><span>01 / 01</span></div>
-            <h3>YOUR<span>WAY</span></h3>
-            <p class="project-subtitle">Web Career Navigator</p>
-            <p class="body-copy">YOURWAY adalah proyek web Career Navigator yang dirancang untuk membantu pengguna mengeksplorasi pilihan dan menemukan arah karier yang sesuai.</p>
-            <div class="project-tags" aria-label="Kategori proyek">
-              <span>Career Navigator</span><span>Web</span><span>Eksplorasi karier</span>
-            </div>
-            <a class="project-link" href="#kontak"><span>Ingin tahu lebih lanjut?</span><span aria-hidden="true">↗</span></a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="contact-section page-width" id="kontak" aria-labelledby="contact-title">
-      <div class="section-index"><span>04</span><span class="index-rule"></span><span>LANGKAH BERIKUTNYA</span></div>
-      <div class="contact-content">
-        <p class="eyebrow">TERIMA KASIH SUDAH BERKUNJUNG</p>
-        <h2 id="contact-title">Mari terus <em>bertumbuh.</em></h2>
-        <p class="body-copy">Saya terbuka untuk belajar, berbagi ide, dan berkolaborasi dalam kegiatan yang menghubungkan pendidikan dan teknologi.</p>
-        <p class="contact-note">Portofolio ini akan terus berkembang seiring perjalanan belajar saya.</p>
-      </div>
-      <div class="contact-stamp" aria-label="Fina, terus bertumbuh">
-        <span>Fina</span><span>TERUS BERTUMBUH</span><b aria-hidden="true">✳</b>
-      </div>
-    </section>
+    <section id="contact" class="contact section"><div class="container contact-inner"><div><p class="eyebrow">04 · Start a conversation</p><h2>Have a challenge?<br /><em>Let's make it real.</em></h2><p class="contact-lede">Whether you’re looking for fresh creative energy, a thoughtful project team, or emerging talent for an internship — we’d love to hear from you.</p><a class="button button-light" href="mailto:nexamuda.team@gmail.com">Email the team <span>↗</span></a></div><div class="contact-aside"><span class="contact-mark">N</span><p>Based in Jakarta<br />Working everywhere.</p><a href="mailto:nexamuda.team@gmail.com">nexamuda.team@gmail.com</a></div></div></section>
   </main>
-
-  <footer class="site-footer">
-    <div class="footer-inner page-width">
-      <a class="wordmark" href="#beranda" aria-label="Kembali ke atas">F<span>.</span></a>
-      <span>© <span id="year"></span> Fina · Dibuat dengan semangat belajar.</span>
-      <a href="#beranda">Kembali ke atas ↑</a>
-    </div>
-  </footer>
-
-  <script>
-    const themeToggle = document.querySelector(".theme-toggle");
-    const themeLabel = document.querySelector(".toggle-label");
-    const isDarkMode = document.documentElement.dataset.theme === "dark";
-
-    themeToggle.setAttribute("aria-pressed", String(isDarkMode));
-    themeLabel.textContent = isDarkMode ? "Mode terang" : "Mode gelap";
-    themeToggle.setAttribute("aria-label", isDarkMode ? "Aktifkan mode terang" : "Aktifkan mode gelap");
-
-    themeToggle.addEventListener("click", () => {
-      const enableDarkMode = document.documentElement.dataset.theme !== "dark";
-      document.documentElement.dataset.theme = enableDarkMode ? "dark" : "light";
-      themeToggle.setAttribute("aria-pressed", String(enableDarkMode));
-      themeLabel.textContent = enableDarkMode ? "Mode terang" : "Mode gelap";
-      themeToggle.setAttribute("aria-label", enableDarkMode ? "Aktifkan mode terang" : "Aktifkan mode gelap");
-    });
-
-    document.querySelector(".print-button").addEventListener("click", () => window.print());
-    document.querySelector("#year").textContent = new Date().getFullYear();
-  </script>
+  <footer class="footer container"><a class="brand" href="#home"><span class="brand-mark">N</span><span>Nexa<span class="brand-accent">Muda</span></span></a><p>© 2026. Team 5 Class 3D Built with curiosity.</p><a href="#home" class="back-top">Back to top ↑</a></footer>
+  <script src="script.js"></script>
 </body>
 </html>
