@@ -1,0 +1,3 @@
+/* Compatibility fix: index.html references "styles.css" but the repository has "style.css".
+   This file imports the existing style.css so the page loads CSS as expected. */
+@import url("style.css");
