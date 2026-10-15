@@ -1,13 +1,11 @@
-# Portfolio Website
-
-**--Interactive Portfolio Website Kelompok 5 Class 3D--**
+# Portfolio Website Team 5 Class 3D
 
 ## About the Project
 Website portofolio interaktif yang dikembangkan menggunakan **HTML, CSS, dan GitHub Copilot**. Proyek ini dibuat untuk menampilkan profil dan karya dalam bentuk website yang menarik, interaktif, dan mudah diakses.
 
 ## Team Members
 
-| No. | Nama | NIM |
+| No. | Name | NIM |
 |:---:|---|---|
 | 01 | Anindya Tsabita | 083 |
 | 02 | Fina Hidayati | 010 |
